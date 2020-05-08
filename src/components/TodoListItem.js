@@ -7,6 +7,11 @@ import {
 import cn from "classnames";
 import "./TodoListItem.scss";
 
+/*TodoListItem
+  to-do list의 항목에 대한 정보를 보여주는 컴포넌트
+  todo 객체를 props로 받아와서 상태에 따라 다른 스타일의 UI를 보여준다.
+*/
+
 const TodoListItem = ({ todo, onRemove, onToggle }) => {
   const { id, text, checked } = todo;
   return (
