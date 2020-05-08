@@ -2,6 +2,11 @@ import React, { useState, useCallback } from "react";
 import { MdAdd } from "react-icons/md";
 import "./TodoInsert.scss";
 
+/*TodoInsert 
+  새로운 항목을 입력하고 추가할 수 있는 컴포넌트
+  state를 통해 input의 상태를 관리한다.
+  */
+
 const TodoInsert = ({ onInsert }) => {
   const [value, setValue] = useState("");
 
